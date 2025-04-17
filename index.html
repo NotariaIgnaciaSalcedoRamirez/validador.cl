@@ -157,36 +157,39 @@
   });
 
   const documentos = {
-    "01847218001": {
-      documento: "Poder Especial de Administración y Trámites Bancarios",
-      "notario firmante": "Ignacia Salcedo Ramírez, Notaria Pública",
-      "fecha de emision": "10 de abril de 2025",
-      hora: "16:47",
-      estado: "VÁLIDO",
-      "Certificado N°": "01847218001",
-      "Código de Verificación": "01847218001",
-      "Estado del Documento": "Activo y Vigente",
+    "EJEMPLO1": {
+      documento: "Declaración jurada simple - Cliente: Matías González",
+      "notario firmante": "Ignacia Salcedo Ramírez",
+      "fecha de emision": "02 de abril de 2025",
       "fecha de vencimiento": "10 de abril de 2026",
+      hora: "11:15",
+      estado: "VÁLIDO",
+      mandante: "Pedro Álvarez Soto",
+      mandatario: "Claudia Herrera Díaz",
+      "Certificado N°": "0011223344",
+      "Código de Verificación": "ABC123",
+      "Estado del Documento": "Activo y Vigente",
       "Ubicación": "Renca",
       "PROTOCOLIZADO N°": "23",
       "REPERTORIO N°": "201845 de 10/04/2025"
     },
-    "ABC123": {
-  documento: "Declaración jurada simple - Cliente: Matías González",
-  "notario firmante": "Ignacia Salcedo Ramírez",
-  "fecha de emision": "02 de abril de 2025",
-  hora: "11:15",
-  estado: "VÁLIDO",
-  "Certificado N°": "0011223344",
-  "Código de Verificación": "ABC123",
-  "Estado del Documento": "Activo y Vigente",
-  "fecha de vencimiento": "10 de abril de 2026",
-  "Ubicación": "Renca",
-  "PROTOCOLIZADO N°": "23",
-  "REPERTORIO N°": "201845 de 10/04/2025"
-}
 
-    }
+"EJEMPLO2": {
+      documento: "Declaración jurada simple - Cliente: Matías González",
+      "notario firmante": "Ignacia Salcedo Ramírez",
+      "fecha de emision": "02 de abril de 2025",
+      "fecha de vencimiento": "10 de abril de 2026",
+      hora: "11:15",
+      estado: "VÁLIDO",
+      mandante: "Pedro Álvarez Soto",
+      mandatario: "Claudia Herrera Díaz",
+      "Certificado N°": "0011223344",
+      "Código de Verificación": "ABC123",
+      "Estado del Documento": "Activo y Vigente",
+      "Ubicación": "Renca",
+      "PROTOCOLIZADO N°": "23",
+      "REPERTORIO N°": "201845 de 10/04/2025"
+}
   };
 
   function checkCode() {
@@ -206,8 +209,11 @@
             <h2>Certificado Digital - Firma Electrónica Avanzada</h2>
             <p><strong>Documento:</strong> ${doc.documento}</p>
             <p><strong>Notario Firmante:</strong> ${doc["notario firmante"]}</p>
-            <p><strong>Fecha:</strong> ${doc.fecha}</p>
+            <p><strong>Fecha de Emisión:</strong> ${doc["fecha de emision"]}</p>
             <p><strong>Hora:</strong> ${doc.hora}</p>
+            <p><strong>Fecha de Vencimiento:</strong> ${doc["fecha de vencimiento"]}</p>
+            <p><strong>Mandante:</strong> ${doc.mandante}</p>
+            <p><strong>Mandatario:</strong> ${doc.mandatario}</p>
             <p><strong>Certificado N°:</strong> ${doc["Certificado N°"]}</p>
             <p><strong>Código de Verificación:</strong> ${doc["Código de Verificación"]}</p>
             <p><strong>Estado del Documento:</strong> ${doc["Estado del Documento"]}</p>
